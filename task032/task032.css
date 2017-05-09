@@ -1,0 +1,210 @@
+main #data-create fieldset:nth-of-type(n+3){
+    display: none;
+}
+/*nth-of-type表示从n+3个元素开始，包括他们各自的子元素*/
+
+main #data-create .select~#option-box,
+main #data-create .checkbox~#option-box,
+main #data-create .radio~#option-box,
+main #data-create .textarea~#length-control,
+main #data-create .input~.code~#length-control,
+main #data-create .input~.text~#length-control,
+main #data-create .input~#rule-box {
+    display: block;
+}
+
+main {
+    width: 300px;
+    float: left; /*float ?= left*/
+}
+
+main #data-create fieldset {
+    margin-top: 20px;
+}
+
+main label {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+#input-name {
+    width: 200px;
+}
+
+#rule-box label, #type-box label {
+    width: 64px;
+    margin: 0;
+}
+
+#length-control input{
+    width: 20%;
+}
+
+ #btn-add {
+    margin-top: 20px;
+    width: 80px;
+    height: 30px;
+    background-color: rgb(59, 153, 252);
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+#form-box {
+    margin: 0 40px 0 340px; /*这里的40px和340px是相对于body,因为main已经浮动了*/
+    min-width: 600px;
+    padding: 0 0 20px 0;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+#title {
+    text-align: center;
+    color: rgb(59, 153, 252);
+}
+
+#result {
+    width: 400px;
+    margin: 20px auto;
+    position: relative; /*如果没有top left right bottom有没有相对定位无所谓*/
+}
+
+#result .radio_box input {
+    width: auto;  /*占满父级的width，auto = width - margin - padding*/
+    height: auto;
+    text-align: left;
+}
+
+#result .radio_box label {
+    display: inline-block;
+    position: static; /*定位默认值*/
+    width: auto;
+    margin-right: 10px;
+}
+
+#result input {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 8px;
+}
+
+#result .radio_box label:first-child, #result label {
+    display: block;
+    text-align: right;
+    position: absolute;
+    width: 300px;
+    left: -320px;
+    margin-top: 4px;
+}
+
+#result .style2 div {
+    display: block;
+    margin-top: 10px;
+    width: 300px;
+    position: relative;
+}
+
+#result .style2 span {
+    top: 0;
+    display: block;
+    position: absolute;
+    text-align: left;
+    margin-top: 4px;
+    right: -350px;
+    width: 320px;
+}
+
+#result div {
+    display: block;
+}
+
+#result span {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 8px;
+    font-size: 14px;
+    color: rgb(193, 193, 193);
+}
+
+#result .true {
+    color: rgb(39, 198, 82);
+    border-color: rgb(39, 198, 82);
+}
+
+#result .error {
+    color: red;
+    border-color: red;
+}
+
+#result .form-name {
+    color: #000;
+}
+
+#result :first-child[id=submit]{
+    display: none;
+}/*这个的意思是如果submit按钮是result的第一个子结点那么就不显示*/
+
+#submit {
+    margin-top: 20px;
+    width: 80px;
+    height: 30px;
+    background-color: rgb(59, 153, 252);
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    outline: none;
+}
+
+#box_item_show {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+#option-box input {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+} /***/
+
+.item {
+    height: 20px;
+    background-color: red;
+    color: white;
+    margin: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    float: left;
+}
+
+.item>span {
+    transition: width 0.2s linear;
+    display: inline-block;
+    width: 0px;
+    height: 16px;
+    overflow: hidden;
+}
+
+.item:hover>span {
+    transition: width 0.2s linear;
+    width: 64px;
+    height: 16px;
+}
+/*点击删除字样*/
+
+.item:hover {
+    background-color: blueviolet;
+}
+
+.hidden {
+    display: none;
+}
+

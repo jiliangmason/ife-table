@@ -1,0 +1,63 @@
+body {
+    padding: 10px;
+    position: relative;
+}
+
+#select-box {
+    position: absolute;
+    left: 50%;
+    margin-top: 350px;
+    margin-left: -137px;
+}
+
+#radio-box {
+    position: absolute;
+    left: 50%;
+    margin-top: 300px;
+    margin-left: -137px;
+
+}
+
+#input-box {
+    position: absolute;
+    left: 50%;
+    margin-top: 350px;
+    margin-left: -137px;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: table-row;
+}
+
+label {
+    display: block;
+    width: 100%;
+    text-align: right;
+    font-weight: bold;
+    font-family: "微软雅黑";
+    font-size: 18px;
+}
+
+.radio {
+    width: 25px;
+}
+
+#input {
+    width: 200px;
+    height: 25px;
+}
+
+.select-item {
+    padding-right: 10px;
+}
+
+select {
+    display: table-row;
+    width: 110px;
+    height: 28px;
+}
+

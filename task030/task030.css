@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto; /*相对于其包含元素偏移，也就是body*/
+}
+
+table {
+    overflow: hidden;
+    zoom: 1;
+    margin: 20px 0; /*margin是与相邻元素，如果没有那么就是其包含元素了*/
+}
+
+table td {
+    padding: 10px;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+
+}
+
+.hint {
+    display: none;
+}
+
+label {
+    display: block;
+    width: 100%;
+    text-align: right;
+    font-weight: bold;
+    font-family: "微软雅黑";
+    font-size: 18px;
+    margin-right: 0px;
+}
+
+button {
+
+    width: 100%;
+    height: 20px;
+    margin-left: 0px;
+}
